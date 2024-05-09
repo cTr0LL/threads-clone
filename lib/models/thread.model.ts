@@ -1,6 +1,4 @@
 import mongoose from "mongoose";
-import { Children } from "react";
-import { date } from "zod";
 
 const threadSchema = new mongoose.Schema({
   text: { type: String, required: true },

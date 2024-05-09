@@ -144,7 +144,7 @@ function ThreadCard({
         </div>
       )}
 
-      {!isComment && community && (
+      {!isComment && community ? (
         <Link
           href={`/communities/${community.id}`}
           className="mt-5 flex items-center"
@@ -161,6 +161,12 @@ function ThreadCard({
             height={14}
             className="ml-1 rounded-full object-cover"
           />
+        </Link>
+      ) : (
+        <Link href={`/thread/${id}`}>
+          <p className="mt-1 text-subtle-medium text-gray-1">
+            {formatDateString(createdAt)}
+          </p>
         </Link>
       )}
     </article>
