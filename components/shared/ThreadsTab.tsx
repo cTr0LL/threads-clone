@@ -57,8 +57,8 @@ async function ThreadsTab({ currentUserId, accountId, accountType }: Props) {
         <ThreadCard
           key={thread._id}
           id={thread._id}
-          currentUserId={currentUserId}
-          parentId={thread.parentId}
+          // currentUserId={currentUserId}
+          // parentId={thread.parentId}
           content={thread.text}
           author={
             accountType === "User"
