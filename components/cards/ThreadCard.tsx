@@ -6,8 +6,8 @@ import { formatDateString } from "@/lib/utils";
 
 interface Props {
   id: string;
-  currentUserId: string;
-  parentId: string | null;
+  // currentUserId: string;
+  // parentId: string | null;
   content: string;
   author: {
     name: string;
@@ -30,8 +30,8 @@ interface Props {
 
 function ThreadCard({
   id,
-  currentUserId,
-  parentId,
+  // currentUserId,
+  // parentId,
   content,
   author,
   community,
